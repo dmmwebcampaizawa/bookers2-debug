@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   devise_for :users
   get "home/about"=>"homes#about"
   
+  #検索
+  get "search" => "searches#search"
+  
   #ネストする
   resources :books, only: [:index,:show,:edit,:create,:destroy,:update] do
     #単数形にすると、/:idがURLに含まれなくなる。

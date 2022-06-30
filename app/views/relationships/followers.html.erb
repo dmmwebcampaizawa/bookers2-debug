@@ -1,12 +1,11 @@
 <div class='container'>
 <div class='row'>
-<div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
 <h1>フォロワー</h1>
 
 <% if @users.exists? %>
   <% @users.each do |user| %>
 
-  <table class='table'>
+  <table class='table table-hover table-inverse'>
     <thead>
       <tr>
        <th>image</th>
@@ -29,6 +28,5 @@
   <p>ユーザーはいません</p>
 <% end %>
 
-</div>
 </div>
 </div>
