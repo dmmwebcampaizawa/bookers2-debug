@@ -1,0 +1,4 @@
+<!--コメント欄を空にする-->
+$('textarea').val("");
+<!--登録したコメントを呼び出す-->
+$("#comments_list").html("<%= j(render 'book_comments/list', book: @book) %>")
